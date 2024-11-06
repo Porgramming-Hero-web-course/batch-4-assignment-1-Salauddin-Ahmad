@@ -11,8 +11,11 @@
 // ----------------------------------------------------------------
 
 
+// sums total of the input array 
 function sumArray(arr: number[]): number {
     return arr.reduce((acc, curr) => acc + curr, 0);
 }
 
 sumArray([1, 2, 3, 4, 5]);
+
+
