@@ -13,13 +13,13 @@
 // --------------------------------------------------------
 
 
-// function validateKeys<T extends object>(obj:T, keys: (keyof T)[]) : boolean {
-//     return keys.every(key => key in obj);
-// }
+function validateKeys<T extends object>(obj:T, keys: (keyof T)[]) : boolean {
+    return keys.every(key => key in obj);
+}
 
-// // Sample Input:
+// Sample Input:
 
-// // Cannot redeclare person || so used differently
-// const persone = { name: "Alice", age: 25, email: "alice@example.com" };
+// Cannot redeclare person || so used differently
+const persone = { name: "Alice", age: 25, email: "alice@example.com" };
 
-// console.log(validateKeys(persone, ["name", "age"])); // true
+console.log(validateKeys(persone, ["name", "age"])); // true
