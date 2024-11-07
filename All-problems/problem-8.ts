@@ -19,8 +19,8 @@ function validateKeys<T extends object>(obj:T, keys: (keyof T)[]) : boolean {
 
 // Sample Input:
 
+// Cannot redeclare person || so used differently
 const persone = { name: "Alice", age: 25, email: "alice@example.com" };
 
 console.log(validateKeys(persone, ["name", "age"])); // true
-
 
